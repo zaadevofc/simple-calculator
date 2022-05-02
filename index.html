@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator || By ZaaDevOfc</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    </head>
+    <body>
+        <div id="buttons">
+        <header></header>
+           <!-- <header class="myName"></header>-->
+        <br /><br>
+        <input id="screen" type="alphanumeric" value="" max="9" placeholder="000" disabled/>
+        <br /><br />
+        <div id="btn">
+            <button class="eight" onclick=insertNum("8")>8</button>
+            <button class="nine" onclick=insertNum("9")>9</button>
+            <button id="delete" class="clear" onclick=del()>Del</button>
+            <button class="six" onclick=insertNum("6")>6</button>
+            <button class="seven" onclick=insertNum("7")>7</button>
+            <button class="division" onclick=insertSym("/")>&divide</button>
+            <button class="four" onclick=insertNum("4")>4</button>
+            <button class="five" onclick=insertNum("5")>5</button>
+            <button class="multiplication" onclick=insertSym("*")>&times;</button>
+            <button class="two" onclick=insertNum("2")>2</button>
+            <button class="three" onclick=insertNum("3")>3</button>
+            <button class="subtraction" onclick=insertSym("-")>&minus;</button>
+            <button class="zero" onclick=insertNum("0")>0</button>
+            <button class="one" onclick=insertNum("1")>1</button>
+            <button class="addition" onclick=insertSym("+")>&plus;</button>
+            <button class="clear" onclick=cls()>Cls</button>
+            <button class="decimal" onclick=insertNum(".")>.</button>
+            <button class="equality" onclick=calc()>=</button>
+            </div>
+        </div>
+        <script src="engine.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

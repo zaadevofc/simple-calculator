@@ -5,7 +5,7 @@
 </head>
 <body>
   <style type="text/css" media="all">
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
     * {
       text-align: center;
@@ -126,26 +126,25 @@
     };
     setInterval(printTime, 1000);
 
-    //The number and symbol Display function on the screen eith other calculations
     function insertNum(num) {
       var screen = document.getElementById("screen");
       screen.value += num;
     };
+
     function insertSym(sym) {
       var screen = document.getElementById("screen");
-      screen.value += symm || sym;
+      screen.value += sym;
     };
 
     function calc() {
       var screen = document.getElementById("screen");
       var result = eval(screen.value);
       screen.value = result;
-      /*if( calc != undefined ){
-        screen.value = "NaN"
-    }*/
+      if (calc == undefined) {
+        screen.value = 'Error'
+      }
     };
 
-    //The Cls (Clear Screen) function
     function cls() {
       var screen = document.getElementById("screen");
       screen.value = "";
